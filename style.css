@@ -23,13 +23,13 @@ nav a {
     color: white;
     text-decoration: none;
     margin-right: 15px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 main {
     padding: 20px;
     text-align: center;
-    min-height: 90vh;
+    min-height: 70vh;
 }
 
 main h1 {
@@ -48,5 +48,5 @@ footer {
 
 footer p {
     color: white;
-    font-size: 16px;
+    font-size: 12px;
 }
