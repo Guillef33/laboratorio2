@@ -76,3 +76,82 @@ footer p {
     color: white;
     font-size: 14px;
 }
+
+/* Contacto Page */
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+form {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 10px;
+    max-width: 700px;
+
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    padding: 0.5rem 0 0.2rem 0;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+input,
+textarea,
+select,
+datalist {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+button {
+    margin-top: 1.5rem;
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    max-width: 700px;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
