@@ -20,35 +20,37 @@
 
         <div class="form-container">
             <div>
-                <form id="contact-form">
+                <form>
 
                     <label for="nombre">Nombre *</label>
-                    <input type="text" name="nombre" maxlength="20" required />
+                    <input type="text" name="nombre" maxlength="20" required placeholder="Ingrese su nombre" />
 
                     <label for="apellido">Apellido</label>
-                    <input type="text" name="apellido" maxlength="20" />
+                    <input type="text" name="apellido" maxlength="20" placeholder="Ingrese su apellido" />
 
                     <label for="email">Email *</label>
-                    <input type="email" name="email" required />
+                    <input type="email" name="email" required placeholder="Ingrese su email" />
 
                     <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su telefono" />
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su teléfono"
+                        onfocus="this.placeholder=''" onblur="this.placeholder='Ingrese su teléfono '" />
 
                     <label for="edad">Edad</label>
-                    <input type="number" id="edad" name="edad" min="16" max="120" />
+                    <input type="number" placeholder="Ingrese su edad" name="edad" min="16" max="120" />
 
                     <label for="direccion">Dirección</label>
-                    <input type="text" name="direccion" />
+                    <textarea type="text" name="direccion">  </textarea>
 
-                    <label for="provincias">Provincia</label>
-                    <select name="provincias">
-                        <option value="seleccionar">Seleccionar</option>
-                        <option value="Río Negro">Rio Negro </option>
-                        <option value="Neuquén"> Neuquén </option>
-                        <option value="Chubut"> Chubut </option>
-                        <option value="Santa Cruz"> Santa Cruz </option>
-                        <option value="Tierra del Fuego">Tierra del fuego </option>
-                    </select>
+                    <label for="provincia">Provincia</label>
+                    <input list="provincias" id="provincia" name="provincia"
+                        placeholder="Ingrese o seleccione su provincia" />
+                    <datalist id="provincias">
+                        <option value="Río Negro">
+                        <option value="Neuquén">
+                        <option value="Chubut">
+                        <option value="Santa Cruz">
+                        <option value="Tierra del Fuego">
+                    </datalist>
 
 
                     <label for="codigoPostal">Código Postal</label>
@@ -132,7 +134,7 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td>Suscripción</td>
+                            <td>Tipo de Suscripción</td>
                             <td></td>
                         </tr>
                     </tbody>
